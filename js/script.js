@@ -3,6 +3,19 @@ $(document).ready(function () {
   $(".next").click(nextImg);
   $(".prev").click(prevImg);
 
+  // Browse img using keyboard arrows
+  $(document).keydown(function(e){
+   var keypressed = e.which;
+   if (keypressed == 39){
+     nextImg();
+     console.log('pressed next');
+   }else if(keypressed == 37){
+     prevImg();
+     console.log('pressed prev');
+   }
+  });
+
+
   //FUNCTIONS
   // function next
   function nextImg() {
