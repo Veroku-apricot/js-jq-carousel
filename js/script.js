@@ -6,10 +6,10 @@ $(document).ready(function () {
   // Browse img using keyboard arrows
   $(document).keydown(function(e){
    var keypressed = e.which;
-   if (keypressed == 39){
+   if (keypressed == 39 || keypressed == 68){
      nextImg();
      console.log('pressed next');
-   }else if(keypressed == 37){
+   }else if(keypressed == 37 || keypressed == 65){
      prevImg();
      console.log('pressed prev');
    }
