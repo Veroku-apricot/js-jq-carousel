@@ -6,11 +6,11 @@ $(document).ready(function () {
   // Browse img using keyboard arrows
   $(document).keydown(function(e){
    var keypressed = e.which;
-   if (keypressed == 39 || keypressed == 68){
+   if (keypressed === 39 || keypressed === 68){
      nextImg();
      nextCircle();
      console.log('pressed next');
-   }else if(keypressed == 37 || keypressed == 65){
+   }else if(keypressed === 37 || keypressed === 65){
      prevImg();
      prevCircle();
      console.log('pressed prev');
